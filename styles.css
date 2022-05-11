@@ -1,5 +1,5 @@
 html {
-  background: #6c94ae url(https://picsum.photos/1000/500/);
+  background: #6c94ae url(https://picsum.photos/1000/500/?blur=2);
   background-size: cover;
   font-family: 'helvetica neue';
   text-align: center;
@@ -40,6 +40,7 @@ body {
 .hand {
   width: 50%;
   height: 6px;
+  border-radius: 3px;
   background: black;
   position: absolute;
   top: 50%;
@@ -47,4 +48,13 @@ body {
   transform: rotate(90deg);
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  width: 40%;
+  transform-origin: 113% 447%;
+}
+
+.second-hand {
+  height: 4px;
 }
